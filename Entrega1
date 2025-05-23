@@ -1,0 +1,14 @@
+nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+genero = input("Qual seu gênero textual preferido? ")
+livro = input("Quantos livros você leu nesse mês? ")
+livro2 = input("Qual foi o seu favorito? ")
+
+print(f"\nOlá {nome}!")
+print(f"Atualmente você têm {idade} anos")
+print(f"Seu gênero textual preferido é {genero}")
+if livro == 1:
+    print(f"Você leu {livro} livro esse mês. Parabéns!")
+else:
+    print(f"Você leu {livro} livros esse mês. Parabéns! Continue assim <3")
+print(f"O seu livro favorito foi: {livro2} !")
