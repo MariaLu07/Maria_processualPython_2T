@@ -1,0 +1,8 @@
+contador = 0
+
+print(f"Tabuada do 7:\n")
+
+while contador <= 100:
+    multiplicacao = 7 * contador
+    print(f"7 x {contador} = {multiplicacao}")
+    contador += 1
