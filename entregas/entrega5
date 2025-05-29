@@ -1,0 +1,19 @@
+nomes = []
+
+print("Digite 10 nomes (apenas letras e espaços):")
+
+for i in range(10):
+    nome = input(f"Nome {i+1}: ").strip()
+    
+    if not nome.replace(" ", "").isalpha():
+        print(f"Nome inválido: '{nome}'. Use apenas letras e espaços.")
+        break
+
+    nomes.append(nome)
+
+nomes.sort()
+
+print("\nNomes em ordem alfabética e quantidade de letras:")
+for nome in nomes:
+    letras = len(nome.replace(" ", ""))
+    print(f"{nome}: {letras} letras")
